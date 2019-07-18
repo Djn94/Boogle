@@ -1,0 +1,43 @@
+make mongodb googlebooks
+Connect mongo thru mongeese
+create a Book schema with title, authors, description, image, link
+create similar application, so the state needs to be saved or search and have a route example to switch which component to display
+components--
+---header, <h1> React google books search</h1><p class="instrucText">Search for and Save Books of Interest </p
+---<searchpage?>
+------<searchDiv>--in this component the <p>Book Search
+
+<search bar input>
+all those onclick functions from the app.js 
+<submit button w the onclick that runs the handleClick function> >> need handleClick function from props
+------</searchDiv>
+
+	an axios pull to retrieve the data from the database?
+
+	a function to apply the results to the <searchResultsDivBox>,
+book Title, authors, description, image, and source link applied to the view button
+	needs a saved button with onclick function to ajax post book information
+also a view button that links to the page link with a _target blank to open new in tab
+	</that> div
+<searchresultsDiv>
+	
+</searchDiv>
+or
+<savedDiv>
+<sameHeader></sameHeader>
+<savedDiv>
+	<savedDivBox>
+		results from the axios pull from savedTo database
+seperate axios call to retrieve from db.savedTo.results?
+	</savedDivBox>
+</savedDiv>
+
+Or try out some home made .scss maybe, if there's time
+
+Express routes needed-
+
+/api/books - get - return all saved books in .JSON
+/api/books - post - post to save clicked book information on savedT0 database
+/api/books/:id - delete- delete books from nogo by '_id'
+* - get - loads page in client/build/index.html, after all
+create react app
