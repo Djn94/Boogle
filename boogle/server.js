@@ -21,7 +21,7 @@ const routes = require("./routes/api/index")
 
 app.use(routes);
 
-mongoose.connect(process.env.MONGOD_URI || "mongodb://localhost/googlebooks")
+mongoose.connect(process.env.MONGOD_URI || "mongodb://root:localh0st@ds151997.mlab.com:51997/heroku_c0q4hkl1")
 app.listen(PORT, () => {
   console.log(`🌎 ==> API server now on port ${PORT}!`);
 });
